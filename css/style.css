@@ -112,3 +112,40 @@ body {
   text-decoration: underline;
   text-align: center;
 }
+
+/* ===== 5. ROZETLER ===== */
+.header-nav a {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: #cb112d;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== 6. AKTİF SAYFA ÇİZGİSİ ===== */
+.header-nav a {
+  height: 52px;
+  justify-content: center;
+}
+
+.header-nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #000000e6;
+}
