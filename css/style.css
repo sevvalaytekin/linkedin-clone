@@ -149,3 +149,39 @@ body {
   height: 2px;
   background-color: #000000e6;
 }
+
+/* ===== 7. MOBİL: ORTA EKRAN (992px'ten dar) ===== */
+@media (max-width: 992px) {
+  .header-nav a > span:not(.badge) {
+    display: none;
+  }
+
+  .header-nav a.premium {
+    display: none;
+  }
+
+  .header-nav ul {
+    gap: 16px;
+  }
+}
+
+/* ===== 8. MOBİL: TELEFON (640px'ten dar) ===== */
+@media (max-width: 640px) {
+  .search input {
+    width: 34px;
+    padding: 0;
+    border-color: transparent;
+  }
+
+  .search input::placeholder {
+    color: transparent;
+  }
+
+  .nav-business {
+    display: none;
+  }
+
+  .header-nav ul {
+    gap: 8px;
+  }
+}
