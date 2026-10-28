@@ -1,3 +1,4 @@
+/* ===== 1. RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,108 @@
 
 body {
   font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f3f2ef; /* LinkedIn'in gri arka planı */
+  background-color: #f3f2ef;
   color: #000000e6;
+}
+
+/* ===== 2. HEADER BANDI ===== */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== 3. SOL TARAF: LOGO + ARAMA ===== */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  background-color: #0a66c2;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.search {
+  position: relative;
+}
+
+.search i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666666;
+  font-size: 14px;
+}
+
+.search input {
+  background-color: #ffffff;
+  border: 1px solid #8c8c8c;
+  border-radius: 20px;
+  height: 34px;
+  width: 280px;
+  padding: 0 12px 0 38px;
+  font-size: 14px;
+}
+
+/* ===== 4. SAĞ TARAF: MENÜ ===== */
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 24px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-nav i {
+  font-size: 20px;
+}
+
+.header-nav span i {
+  font-size: 12px;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+  color: #000000e6;
+}
+
+.nav-business {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 24px;
+}
+
+.header-nav a.premium {
+  color: #915907;
+  text-decoration: underline;
+  text-align: center;
 }
